@@ -55,6 +55,7 @@ INDEX VERSION 1.131+C:\claro-brasil-challenge-qa\web-challenge\.metadata\.plugin
 133565802.index
 2394565407.index
 3969862631.index
+673741013.index
 2165884459.index
 1268725784.index
 1197276530.index
