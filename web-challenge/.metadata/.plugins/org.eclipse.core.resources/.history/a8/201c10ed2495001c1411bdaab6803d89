@@ -1,0 +1,37 @@
+package elementos;
+
+import org.openqa.selenium.By;
+
+public class Elementos {
+	
+	//Elementos Web
+	private By signin = By.cssSelector("#header > div.nav > div > div > nav > div.header_user_info > a");
+	private By email = By.xpath("//*[@id=\"email_create\"]");
+	private By create = By.xpath ("//*[@id=\"SubmitCreate\"]/span");
+	private By firstname = By.xpath ("//*[@name=\"customer_firstname\"]");
+
+
+	
+	//Metodos publicos para acessos aos elementos
+
+
+	public By getSignin() {
+		return signin;
+	}
+
+	public By getEmail() {
+		return email;
+	}
+
+	public By getCreate() {
+		return create;
+	}
+
+	public By getFirstname() {
+		return firstname;
+	}
+
+
+
+
+}

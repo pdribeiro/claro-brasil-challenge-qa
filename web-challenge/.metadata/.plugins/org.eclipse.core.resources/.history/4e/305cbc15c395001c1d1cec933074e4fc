@@ -1,0 +1,56 @@
+#Author: pedro.r.franco90@gmail.com
+
+Feature: Realizar cadastro
+  Eu como usuario deseja realizar cadastro no site
+  
+  Background: Acessar o site automationpractice.com
+  Given que eu esteja no "http://automationpractice.com/index.php"
+
+  Scenario: CN01 Realizar cadastro
+  	When Clicar em Signin
+  	And Preencher o campo email "dvbb1@hotmail.com"
+  	And Clicar em Create an account ""
+  	And Preencher o campo First name "Pedro"
+  	And Preencher o campo Last name "Franco"
+  	And Preencher o campo Password "12345"
+  	And Preencher o campo de endereco Address "Av1"
+  	And Preencher o campo de endereco City "Sao Paulo"
+  	And Preencher o campo de endereco State
+  	And Preencher o campo de endereco Zip "00000"
+  	And Preencher o campo de endereco Country ""
+  	And Preencher o campo de endereco Mobile phone "987656787"
+  	And Preencher o campo de endereco reference ""
+  	And Clicar em "Registrar"
+  	Then Cadastrado realizado com sucesso
+  	Then Validar se o cadastro foi realizado "Sign out"
+  	Then Visualizo evidencias de "Login"
+  	
+
+  Scenario: CN02 Teste negativo Campo de email em branco
+  	When Clicar em Signin
+  	And Clicar em Create an account ""
+  	And Nao preencher o campo de email
+  	Then Mensagem de erro
+  	Then Valido mensagem de erro "Invalid email address."
+  	Then Visualizo evidencias de erro "Email invalid"
+  	
+  	
+  	
+  	
+
+  
+
+
+  	
+
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+
+

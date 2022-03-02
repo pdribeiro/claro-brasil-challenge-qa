@@ -1,0 +1,64 @@
+package elementos;
+
+import org.openqa.selenium.By;
+
+public class Elementos {
+	
+	//Elementos Web
+	private By signin = By.cssSelector("#header > div.nav > div > div > nav > div.header_user_info > a");
+	private By email = By.xpath("//*[@id=\"email_create\"]");
+	private By create = By.xpath ("//*[@id=\"SubmitCreate\"]/span");
+	private By firstname = By.xpath ("//*[@id=\"customer_firstname\"]");
+	private By lastname = By.xpath ("//*[@id=\"customer_lastname\"]");
+	private By phone = By.xpath ("//*[@id=\"phone_mobile\"]");
+	private By passwd = By.xpath ("//*[@id=\"passwd\"]");
+	private By address1 = By.xpath ("//*[@id=\"address1\"]");
+	private By city = By.xpath ("//*[@id=\"address1\"]");
+	private By city = By.xpath ("//*[@id=\"id_state\"]");
+
+
+
+	
+	//Metodos publicos para acessos aos elementos
+
+
+	public By getSignin() {
+		return signin;
+	}
+
+	public By getEmail() {
+		return email;
+	}
+
+	public By getCreate() {
+		return create;
+	}
+
+	public By getFirstname() {
+		return firstname;
+	}
+
+	public By getLastname() {
+		return lastname;
+	}
+
+	public By getPhone() {
+		return phone;
+	}
+
+	public By getPasswd() {
+		return passwd;
+	}
+
+	public By getAddress1() {
+		return address1;
+	}
+
+	public By getCity() {
+		return city;
+	}
+
+
+
+
+}

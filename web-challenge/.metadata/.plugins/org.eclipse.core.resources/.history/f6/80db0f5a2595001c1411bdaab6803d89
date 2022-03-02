@@ -1,0 +1,44 @@
+package pages;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Timeouts;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Metodos {
+
+	WebDriver driver;
+
+	public void abrirNavegador(String site, String descricaoPasso) {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get(site);
+		driver.manage().window().maximize();
+
+	}
+
+	public void clicar(By elemento) {
+		try {
+			driver.findElement(elemento).click();
+		} catch (Exception e) {
+			System.err.println("---------- Error ao clicar no elemento ----------" + e.getMessage());
+			System.err.println("---------- Causa do erro ----------" + e.getCause());
+		}
+	}
+	
+	public void escrever (String texto, By elemento) {
+		try {
+		driver.findElement(elemento).sendKeys(texto);
+		} catch (Exception e) {
+			System.err.println("---------- Error ao escrever ----------" + e.getMessage());
+			System.err.println("---------- Causa do erro ----------" + e.getCause());
+		}
+		
+	}
+	
+	
+
+}
