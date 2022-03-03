@@ -8,7 +8,7 @@ Feature: Realizar cadastro
 
   Scenario: CN01 Realizar cadastro
   	When Clicar em Signin
-  	And Preencher o campo email "alfredo14@hotmail.com"
+  	And Preencher o campo email "alfredo143@hotmail.com"
   	And Clicar em Create an account ""
   	And Preencher o campo First name "Pedro"
   	And Preencher o campo Last name "Franco"
