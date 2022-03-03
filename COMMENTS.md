@@ -14,14 +14,16 @@ Lista de bibliotecas de terceiros utilizadas
  
 O que você melhoraria se tivesse mais tempo
  
-- Melhor a qualidade dos xpath , trabalhar com mais de um branch para manutenção do código e não subir em apenas 2 push
+- Melhorar a qualidade de alguns xpath , trabalhar com mais de um branch para manutenção do código e não subir em apenas 2 push
+- Teste para o iOS , devido não dominar muito a parte mobile consegui fazer apenas para o Android emulando localmente no Android Studio
+
  
  
  
 Quais requisitos obrigatórios e desejáveis não foram entregues e o motivo
  
 - Criar mais cenários negativos
-Exemplo : Cenário passando os ultrapassando de caracteres permitidos nos campos
+Exemplo : Cenário ultrapassando limite de caracteres permitidos nos campos
 - Estudar mais o mobile para conseguir fazer os teste em cloud
 - Teste para o iOS , devido não dominar muito a parte mobile consegui fazer apenas para o Android emulando localmente no Android Studio
 
